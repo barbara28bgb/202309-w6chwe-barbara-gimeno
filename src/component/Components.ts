@@ -2,12 +2,14 @@ abstract class Component {
   protected readonly element: Element;
 
   constructor(
-    private readonly parentElement: Element,
+    protected parentElement: Element,
     tagName: string,
     className: string,
   ) {
     this.element = document.createElement(tagName);
     this.element.className = className;
+
+    parentElement.appendChild(this.element);
   }
 
   public render(): void {

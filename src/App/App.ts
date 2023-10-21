@@ -1,4 +1,4 @@
-import Component from "../component/Components";
+import Component from "../component/Components.js";
 
 class App extends Component {
   constructor(parentElement: Element) {
