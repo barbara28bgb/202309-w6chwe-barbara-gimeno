@@ -6,13 +6,12 @@ abstract class Component {
     tagName: string,
     className: string,
   ) {
-    this.element = document.createElement("tagName");
+    this.element = document.createElement(tagName);
     this.element.className = className;
   }
 
   public render(): void {
     this.parentElement.appendChild(this.element);
-
     this.populate();
   }
 
