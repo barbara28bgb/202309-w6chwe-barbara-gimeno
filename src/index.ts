@@ -16,7 +16,7 @@ appElement.render();
 
 const pokeList = document.querySelector("ul")!;
 
-pokeApiResponse.results.forEach(async (pokemon: Pokemon) => {
+pokeApiResponse.results.forEach((pokemon: Pokemon) => {
   const pokemonList = document.createElement("li");
   pokemonList.textContent = `${pokemon.name}`;
   pokeList.appendChild(pokemonList);
